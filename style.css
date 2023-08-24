@@ -44,8 +44,7 @@ h2
 {
     width:100px;
     background-color:lightgray;
-    outline:none;
-    cursor:pointer;
+    cursor: pointer;
 }
     
 .hiddendiv 
@@ -53,10 +52,8 @@ h2
     display:none;
     background-color:green;
 }
-    
-.clicker:focus + .hiddendiv
+
+.old-talks
 {
-    display:block;
     background-color: lightgray;
 }
-
