@@ -1,0 +1,62 @@
+body
+{
+    background-color: azure;
+}
+
+h2
+{
+    margin-top: -20px;
+}
+
+.wrapper
+{
+    display: grid;
+    grid-template-areas: 
+        "h h h"
+        "s m r";
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+
+.header
+{
+    grid-area: h;
+    text-align: center;
+}
+
+.sidebar
+{
+    grid-area: s;
+    padding-right: 20px;
+}
+
+.main-content
+{
+    grid-area: m;
+}
+
+.title
+{
+    font-weight: bold;
+}
+
+.clicker 
+{
+    width:100px;
+    background-color:lightgray;
+    outline:none;
+    cursor:pointer;
+}
+    
+.hiddendiv 
+{
+    display:none;
+    background-color:green;
+}
+    
+.clicker:focus + .hiddendiv
+{
+    display:block;
+    background-color: lightgray;
+}
+
